@@ -3,6 +3,9 @@ language: go
 go:
     - "1.8.2"
 
+sudo: false
+dist: xenial
+
 # env:
 #     global:
 #         - SSH_KEY="id_rsa"
