@@ -18,7 +18,8 @@ sudo: false
 
 before_script:
     # - git clone --branch v2 https://github.com/go-yaml/yaml $GOPATH/src/gopkg.in/yaml.v2
-    - go get -u -v github.com/spf13/hugo
+    - git clone -b 'v0.21' --single-branch --depth 1 https://github.com/spf13/hugo.git
+    - go get -v github.com/spf13/hugo
 
 script:
     # - git clone https://github.com/rcoedo/hugo-steam-theme ./themes/hugo-steam-theme
